@@ -40,8 +40,11 @@ body {
     color: black !important;
 }
 
-.navbar .icon {
-    display: none;
+.icon img {
+  	width: 50px;
+  	height: 50px;
+  
+  	display: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -53,7 +56,7 @@ body {
 	.navbar a:hover:not(:first-child:last-child) {
 		border-bottom: 1px solid black;
 	};
-	.navbar a.icon {
+	.navbar .icon {
 		float: right;
 		display: block;
 	}
@@ -86,10 +89,16 @@ body {
 	margin: 0 auto;
 	margin-top: 2vw;
 	padding-bottom: 20px;
+	overflow: hidden;
 }
 
-.container .body, .container .subheader, .container .header {
+.body, .subheader, .header {
 	margin-left: 20px;
+	margin-right: 20px;
+}
+
+li {
+	width: 90%;
 }
 
 .container .header {
