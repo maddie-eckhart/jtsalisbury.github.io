@@ -1,0 +1,137 @@
+* {
+	font-family: 'Barlow', sans-serif;
+	text-decoration: none;
+}
+
+body {
+	background-color:  #96839c;
+}
+
+.name a {
+	color: red !important;
+	font-family: 'Creepster', sans-serif;
+	text-decoration: none;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*   	Navbar Styling     */
+.navbar {
+	background-color: #683785;
+	font-family: 'Creepster', sans-serif;
+    overflow: hidden;
+
+	  margin-top: -8px;
+	  margin-left: -8px;
+
+	  width: 100vw;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+	color: rgb(235, 235, 235);
+	font-family: 'Creepster', sans-serif;
+	text-decoration: none;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover:not(:first-child) {
+    background-color: rgb(255, 207, 167);
+    color: black;
+}
+
+.active {
+    background-color: rgb(0, 0, 0);
+    color: rgb(169, 221, 180) !important;
+}
+
+.icon img {
+  	width: 50px;
+  	height: 50px;
+  
+  	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.navbar a:not(:first-child) {
+		display: none;
+
+		padding: 14px 16px;
+	}
+	.navbar a:hover:not(:first-child:last-child) {
+		border-bottom: 1px solid black;
+	};
+	.navbar .icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.navbar.responsive {
+		position: relative;
+	}
+	.navbar.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+
+/* 
+	Container Styling
+*/
+
+.container {
+	width: 70vw;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 2vw;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+.header {
+	font-family: 'Creepster', sans-serif;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.subheader {
+	font-family: 'Creepster', sans-serif;
+	color: rgb(228, 115, 39);
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.body {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+li {
+	width: 90%;
+}
+
+.container .header {
+	padding-top: 20px;
+	width: 200px;
+	border-bottom: 1px solid black;
+}
+
+.container .body {
+
+}
